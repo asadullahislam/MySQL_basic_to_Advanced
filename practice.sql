@@ -142,4 +142,5 @@ LIMIT 1;
 
 --21.Count Employees Hired Each Year 
 
-select extract(YEAR from hire_date ) as hire_date,count(*) from employees GROUP BY hire_date;
+select extract(YEAR from hire_date ) as hire_date,count(*) from employees GROUP BY hire_date; 
+ SELECT * FORM  EMPLOYEES
