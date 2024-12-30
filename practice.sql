@@ -126,7 +126,7 @@ GROUP BY department_name
 
 --19. Count Employees in Each Department
 
-SELECT department_name  ,count(*) from employees join departments using(department_id)
+SELECT department_name  , count(*) from employees join departments using(department_id)
 GROUP BY department_name;
 
 --20. Find the Department name with Highst Average Salary
@@ -142,4 +142,4 @@ LIMIT 1;
 
 --21.Count Employees Hired Each Year 
 
-select extract(YEAR form hire_date ) from employees ORDER BY 
+select extract(YEAR from hire_date ) as hire_date,count(*) from employees GROUP BY hire_date;
